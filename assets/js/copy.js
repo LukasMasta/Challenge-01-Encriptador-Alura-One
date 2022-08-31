@@ -6,5 +6,5 @@ copyButton.addEventListener("click", function(){
 });
 
 function copy(){
-    navigator.clipboard.writeText(textOut.value)  
+    navigator.clipboard.writeText(textOut.value); 
 }
