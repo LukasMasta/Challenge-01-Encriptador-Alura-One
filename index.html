@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Encriptador/Desencriptador De Texto</title>
+</head>
+
+<body>
+
+    <header >
+        <img src="assets/img/logo.png" class="logo">
+    </header>
+        <main>
+            <div class="general_area">
+
+                <div class="area_one">
+                    <div>
+                        <textarea class="encrypt_areatext" name="textoencriptar" id="text_in" placeholder="Escriba su texto a encriptar/desencriptar"></textarea>
+                    </div>
+                    <div class="warning_zone">
+                        <img class="warning" src="assets/img/advertencia.png" rel="advertencia">
+                    </div>
+                    <div class="encrypt_area">
+                        <div class="area_encrypt_button">
+                            <input class="pag_button" id="encrypt_button" type="button" value="Encriptar">
+                        </div>
+                            <input class="pag_button" id="decrypt_button" type="button" value="Desencriptar">
+                    </div>
+                </div>
+
+                <div class="area_two">
+                    <div class="decrypt_area">
+                        <textarea class="decrypt_areatext" name="textodesencriptar" id="text_out" value="textodesencriptado" readonly></textarea>
+                        <div class="img_textarea_two"></div>
+                    </div>
+                    <div class="area_decrypt_button">
+                        <input class="pag_button" id="copy_button" type="button" value="Copiar"> 
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    <footer>
+        <div class="link_github">
+            <a href="https://github.com/LukasMasta"><img class="logo_github" src="assets/img/GitHub-Mark-32px.png" rel="Logo github"></a>
+        </div>
+        <div class="copyright">
+            <p>&copy;LucasMasta 2022</p>
+        </div>    
+    </footer>
+
+</body>
+
+</html>
+
+<script type="module" src="assets/js/verification.js"></script>
+<script type="module" src="assets/js/encrypt.js"></script>
+<script type="module" src="assets/js/decrypt.js"></script>
+<script src="assets/js/copy.js"></script>
